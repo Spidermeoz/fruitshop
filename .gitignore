@@ -5,3 +5,4 @@ __pycache__/
 node_modules/
 app/static/css/output.css
 data/
+alembic.ini
