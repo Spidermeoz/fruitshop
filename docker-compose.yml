@@ -1,0 +1,14 @@
+﻿services:
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_DB: fruitshop
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    ports:
+      - "5433:5432"        # map host 5433 -> container 5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
