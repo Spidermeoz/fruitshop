@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded", () => console.log("Fruit Shop loaded"));
